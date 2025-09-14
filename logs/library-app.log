@@ -1,0 +1,22 @@
+2025-09-14 09:15:10.732 [main] INFO  com.library.LibraryApplication - Starting Library Management System
+2025-09-14 09:15:10.753 [main] INFO  com.library.service.LibraryServiceImpl - Added 2 copies of book: Book{isbn='978-0134685991', title='Introduction to Computing', author='Me'}
+2025-09-14 09:15:10.754 [main] INFO  com.library.service.LibraryServiceImpl - Added 1 copies of book: Book{isbn='978-0596009205', title='Head First Design Patterns', author='Eric Freeman'}
+2025-09-14 09:15:10.754 [main] INFO  com.library.service.LibraryServiceImpl - Added 3 copies of book: Book{isbn='978-0132350884', title='Clean Code', author='Robert Martin'}
+2025-09-14 09:15:10.754 [main] INFO  com.library.LibraryApplication - Added books to library
+2025-09-14 09:15:10.756 [main] INFO  com.library.LibraryApplication - Created users with different priority levels
+2025-09-14 09:15:10.757 [main] INFO  com.library.LibraryApplication - 
+=== Demonstrating Library Application ===
+2025-09-14 09:15:10.760 [main] INFO  com.library.service.LibraryServiceImpl - Book borrowed successfully: BookCopy{copyId='978-0134685991-1', title=Introduction to Computing, available=false} by Smith Yakub
+2025-09-14 09:15:10.760 [main] INFO  com.library.LibraryApplication - Teacher borrows first copy: 978-0134685991-1
+2025-09-14 09:15:10.760 [main] INFO  com.library.service.LibraryServiceImpl - Book borrowed successfully: BookCopy{copyId='978-0134685991-2', title=Introduction to Computing, available=false} by Alice Johnson
+2025-09-14 09:15:10.761 [main] INFO  com.library.LibraryApplication - Senior student borrows second copy: 978-0134685991-2
+2025-09-14 09:15:10.762 [main] INFO  com.library.service.LibraryServiceImpl - Book request queued: com.library.entities.BookRequest@411f53a0
+2025-09-14 09:15:10.763 [main] INFO  com.library.LibraryApplication - Junior student request (should be queued): book taken
+2025-09-14 09:15:10.763 [main] INFO  com.library.service.LibraryServiceImpl - Book request queued: com.library.entities.BookRequest@2b71e916
+2025-09-14 09:15:10.764 [main] INFO  com.library.LibraryApplication - Second teacher request (should be queued with higher priority): book taken
+2025-09-14 09:15:10.764 [main] INFO  com.library.LibraryApplication - 
+Returning first copy...
+2025-09-14 09:15:10.764 [main] INFO  com.library.LibraryApplication - === Priority System Demonstration Complete ===
+
+2025-09-14 09:15:10.765 [main] INFO  com.library.LibraryApplication - Total books: {978-0132350884-1=BookCopy{copyId='978-0132350884-1', title=Clean Code, available=true}, 978-0132350884-3=BookCopy{copyId='978-0132350884-3', title=Clean Code, available=true}, 978-0132350884-2=BookCopy{copyId='978-0132350884-2', title=Clean Code, available=true}, 978-0134685991-1=BookCopy{copyId='978-0134685991-1', title=Introduction to Computing, available=false}, 978-0134685991-2=BookCopy{copyId='978-0134685991-2', title=Introduction to Computing, available=false}, 978-0596009205-1=BookCopy{copyId='978-0596009205-1', title=Head First Design Patterns, available=true}}
+2025-09-14 09:15:10.766 [main] INFO  com.library.LibraryApplication - Library Management System demonstration completed

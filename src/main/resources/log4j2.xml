@@ -11,12 +11,12 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.libraryapp" level="INFO" additivity="false">
+        <Logger name="com.library" level="INFO" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="FileAppender"/>
         </Logger>
 
-        <Root level="WARN">
+        <Root level="INFO">
             <AppenderRef ref="Console"/>
         </Root>
     </Loggers>

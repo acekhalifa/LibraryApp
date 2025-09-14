@@ -14,14 +14,15 @@ public class LibraryApplication {
     private static final Logger logger = LogManager.getLogger(LibraryApplication.class);
 
     public static void main(String[] args) {
+        System.out.println("ghreugh;hreu");
         logger.info("Starting Library Management System");
 
         LibraryService library = new LibraryServiceImpl();
-
+        System.out.println("ghreugh;hreu");
         Book book1 = new Book("978-0134685991", "Introduction to Computing", "Me");
         Book book2 = new Book("978-0596009205", "Head First Design Patterns", "Eric Freeman");
         Book book3 = new Book("978-0132350884", "Clean Code", "Robert Martin");
-
+        System.out.println("ghreugh;hreu");
         library.addBook(book1, 2);
         library.addBook(book2, 1);
         library.addBook(book3, 3);
@@ -46,7 +47,7 @@ public class LibraryApplication {
 
     private static void demonstrateBorrowingSystem(LibraryService library, Book book,
                                                    User teacher, User senior, User junior, User teacher2) {
-
+        System.out.println("ghreugh;hrfbbbbbbbeu");
         String isbn = book.getIsbn();
 
         logger.info("\n=== Demonstrating Library Application ===");
