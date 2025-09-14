@@ -1,6 +1,6 @@
 package com.library.entities;
 
-public class BookRequest implements Comparable<User>{
+public class BookRequest implements Comparable<BookRequest>{
     private User user;
     private String bookId;
 
@@ -18,7 +18,7 @@ public class BookRequest implements Comparable<User>{
     }
 
     @Override
-    public int compareTo(User otherUser) {
-        return Integer.compare(user.getPriority(), otherUser.getPriority());
+    public int compareTo(BookRequest otherRequest) {
+        return Integer.compare(user.getPriority(), otherRequest.getUser().getPriority());
     }
 }
